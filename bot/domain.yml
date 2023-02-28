@@ -1,0 +1,23 @@
+version: "3.0"
+
+intents:
+  - math_operation
+  - more_operations
+
+entities:
+  - operand1
+  - operand2
+
+responses:
+  utter_greet:
+  - text: "Hi there! What mathematical operation do you want to perform?"
+
+  utter_confirm_more_operations:
+  - text: "Sure, what operation do you want to perform?"
+
+  utter_math_result:
+  - text: "The {operation} of {operand1} and {operand2} is {result}."
+
+actions:
+- action_math_operation
+- action_more_operations

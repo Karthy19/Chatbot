@@ -1,0 +1,23 @@
+version: "3.0"
+
+rules:
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Restart conversation
+  steps:
+  - intent: goodbye
+  - action: action_restart
+
+- rule: Perform math operation
+  steps:
+  - intent: math_operation
+  - action: action_math_operation
+  - action: action_more_operations
+
+- rule: More math operations
+  steps:
+  - intent: more_operations
+  - action: action_more_operations

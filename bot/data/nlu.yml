@@ -1,0 +1,12 @@
+version: "3.0"
+
+nlu:
+- intent: math_operation
+  examples: |
+    - add [4](operand1) and [5](operand2)
+    - what is the [product](operation) of [6](operand1) and [3](operand2)?
+    - [divide](operation) [12](operand1) by [4](operand2)
+- intent: more_operations
+  examples: |
+    - Can you do more operations?
+    - I want to do more math

@@ -1,0 +1,13 @@
+version: "3.0"
+
+stories:
+- story: Math operation
+  steps:
+  - intent: math_operation
+  - action: action_math_operation
+  - action: action_more_operations
+
+- story: More operations
+  steps:
+  - intent: more_operations
+  - action: action_more_operations
